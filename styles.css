@@ -8,6 +8,13 @@
   --line: rgba(16, 42, 59, 0.14);
   --radius: 8px;
   --section-gutter: 80px;
+  --font-family: "Fira Sans", sans-serif;
+  --text-body: clamp(1rem, 1.05vw, 1.125rem);
+  --text-small: 0.875rem;
+  --text-label: 0.75rem;
+  --text-button: 0.875rem;
+  --text-section: clamp(2.45rem, 3.7vw, 4.45rem);
+  --text-subheading: clamp(1.75rem, 2.25vw, 2.65rem);
 }
 
 * {
@@ -20,7 +27,16 @@ html {
 
 body {
   min-width: 320px;
-  font-family: "Fira Sans", sans-serif;
+  font-family: var(--font-family);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
 }
 
 .skip-link {
@@ -259,7 +275,7 @@ body {
 .hero-nav .nav-menu.is-open a:not(.nav-menu-cta)::after {
   content: "+";
   color: rgba(255, 255, 255, 0.72);
-  font-weight: 200;
+  font-weight: 300;
   letter-spacing: 0;
 }
 
@@ -346,7 +362,7 @@ body {
 .hero-eyebrow {
   margin-bottom: 1.6rem;
   color: rgba(255, 255, 255, 0.92);
-  font-family: "Fira Sans", sans-serif;
+  font-family: var(--font-family);
   letter-spacing: 0.04em;
   line-height: 1.2;
 }
@@ -354,7 +370,7 @@ body {
 .hero-title {
   max-width: 860px;
   color: #fff;
-  font-family: "Fira Sans", sans-serif;
+  font-family: var(--font-family);
   font-size: clamp(3.25rem, 4.85vw, 5.75rem);
   font-weight: 400;
   letter-spacing: 0;
@@ -375,7 +391,7 @@ body {
   margin-top: clamp(2.1rem, 3.2vw, 3.5rem);
   margin-left: 0;
   color: rgba(255, 255, 255, 0.94);
-  font-family: "Fira Sans", sans-serif;
+  font-family: var(--font-family);
   font-size: 0.84rem;
   font-weight: 700;
   letter-spacing: 0.02em;
@@ -401,7 +417,7 @@ body {
   background: rgba(255, 255, 255, 0.18);
   color: #fff;
   backdrop-filter: blur(16px);
-  font-family: "Fira Sans", sans-serif;
+  font-family: var(--font-family);
   font-size: 0.84rem;
   font-weight: 700;
   letter-spacing: 0.16em;
@@ -435,7 +451,7 @@ body {
   background: #dce8f2;
   color: #16284c;
   padding: 0.58rem 0.9rem;
-  font-family: "Fira Sans", sans-serif;
+  font-family: var(--font-family);
   font-size: clamp(0.75rem, 0.78vw, 0.9rem);
   font-weight: 400;
   letter-spacing: 0.12em;
@@ -460,25 +476,6 @@ body {
   padding: 0.9rem 1.25rem;
   font-weight: 700;
   transition: transform 0.22s ease, background 0.22s ease, border-color 0.22s ease, color 0.22s ease;
-}
-
-:where(
-  .hero-actions a,
-  .aker-row-button,
-  .search-panel .btn-primary,
-  .property-view-link,
-  .management-panel-copy .btn-primary,
-  .portfolio-intro-button,
-  .portfolio-link,
-  .trust-customers-button,
-  .cta-card-light > a,
-  .cta-card-image a,
-  .hero-nav .nav-menu.is-open .nav-menu-cta
-) {
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 700;
-  letter-spacing: 0;
-  text-transform: none;
 }
 
 .btn-primary {
@@ -522,7 +519,7 @@ body {
 .section-heading h2 {
   margin-top: 0.7rem;
   color: inherit;
-  font-family: "Fira Sans", sans-serif;
+  font-family: var(--font-family);
   font-size: clamp(2.45rem, 3.7vw, 4.45rem);
   font-weight: 400;
   letter-spacing: -0.05em;
@@ -532,7 +529,7 @@ body {
 
 :where(.section-heading h2, .aker-section-head h2, .management-intro h2, .proof-heading h2, .portfolio-intro h2, .value-practice-heading h2, .endtoend-copy h3) {
   color: #192a53;
-  font-family: "Fira Sans", sans-serif;
+  font-family: var(--font-family);
   font-size: clamp(2.45rem, 3.7vw, 4.45rem);
   font-weight: 400;
   letter-spacing: -0.05em;
@@ -592,7 +589,7 @@ body {
 
 .philosophy-lead h2 {
   margin-top: 0.7rem;
-  font-family: "Fira Sans", sans-serif;
+  font-family: var(--font-family);
   font-size: clamp(2.45rem, 3.7vw, 4.45rem);
   font-weight: 400;
   letter-spacing: -0.05em;
@@ -603,7 +600,7 @@ body {
   max-width: 760px;
   padding-top: clamp(1.5rem, 2vw, 2.5rem);
   color: #102a3b;
-  font-family: "Fira Sans", sans-serif;
+  font-family: var(--font-family);
   font-size: clamp(1.55rem, 2.35vw, 2.8rem);
   font-weight: 300;
   line-height: 1.22;
@@ -636,7 +633,7 @@ body {
 
 .philosophy-principles span {
   color: #a5284f;
-  font-family: "Fira Sans", sans-serif;
+  font-family: var(--font-family);
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -646,7 +643,7 @@ body {
 .philosophy-principles h3 {
   margin: auto 0 0;
   color: #102a3b;
-  font-family: "Fira Sans", sans-serif;
+  font-family: var(--font-family);
   font-size: clamp(1.55rem, 1.85vw, 2rem);
   font-weight: 400;
   line-height: 1.08;
@@ -679,7 +676,7 @@ body {
 
 .endtoend-title h2 {
   color: #192a53;
-  font-family: "Fira Sans", sans-serif;
+  font-family: var(--font-family);
   font-size: clamp(2.45rem, 3.7vw, 4.45rem);
   font-weight: 400;
   letter-spacing: -0.05em;
@@ -701,7 +698,7 @@ body {
   background: #dce8f2;
   color: #16284c;
   padding: 0.58rem 0.9rem;
-  font-family: "Fira Sans", sans-serif;
+  font-family: var(--font-family);
   font-size: clamp(0.75rem, 0.78vw, 0.9rem);
   font-weight: 400;
   letter-spacing: 0.12em;
@@ -719,7 +716,7 @@ body {
   max-width: 920px;
   margin: 0;
   color: #192a53;
-  font-family: "Fira Sans", sans-serif;
+  font-family: var(--font-family);
   font-size: clamp(2.45rem, 3.7vw, 4.45rem);
   font-weight: 400;
   letter-spacing: -0.05em;
@@ -767,7 +764,7 @@ body {
 .endtoend-principles h4 {
   margin: 0;
   color: #192a53;
-  font-family: "Fira Sans", sans-serif;
+  font-family: var(--font-family);
   font-size: clamp(1.85rem, 2.25vw, 2.65rem);
   font-weight: 300;
   letter-spacing: -0.05em;
@@ -843,7 +840,7 @@ body {
 .lifecycle-card span,
 .management-card span {
   color: var(--gold);
-  font-family: "Fira Sans", sans-serif;
+  font-family: var(--font-family);
   font-weight: 700;
 }
 
@@ -851,9 +848,9 @@ body {
 .route-card h3,
 .management-card h3 {
   margin-top: 1rem;
-  font-family: "Fira Sans", sans-serif;
+  font-family: var(--font-family);
   font-size: 1.45rem;
-  font-weight: 650;
+  font-weight: 600;
   line-height: 1.1;
 }
 
@@ -910,7 +907,7 @@ body {
 
 .aker-section-head h2 {
   color: #000;
-  font-family: "Fira Sans", sans-serif;
+  font-family: var(--font-family);
   font-size: clamp(2.45rem, 3.7vw, 4.45rem);
   font-weight: 400;
   letter-spacing: -0.05em;
@@ -939,7 +936,7 @@ body {
 
 .aker-work-row h3 {
   color: #5587dc;
-  font-family: "Fira Sans", sans-serif;
+  font-family: var(--font-family);
   font-size: clamp(2rem, 2vw, 2.6rem);
   font-weight: 300;
   line-height: 1.1;
@@ -1275,7 +1272,7 @@ body {
   max-width: 100%;
   margin: 0;
   color: #fff;
-  font-family: "Fira Sans", sans-serif;
+  font-family: var(--font-family);
   font-size: clamp(0.96rem, 0.98vw, 1.1rem);
   font-weight: 500;
   line-height: 1.25;
@@ -1493,7 +1490,7 @@ body {
 .management-intro h2 {
   max-width: 980px;
   margin-top: 0.5rem;
-  font-family: "Fira Sans", sans-serif;
+  font-family: var(--font-family);
   font-size: clamp(2.45rem, 3.7vw, 4.45rem);
   font-weight: 400;
   letter-spacing: -0.05em;
@@ -1662,7 +1659,7 @@ body {
 .management-panel-copy h3 {
   max-width: 680px;
   color: #004789;
-  font-family: "Fira Sans", sans-serif;
+  font-family: var(--font-family);
   font-size: clamp(1.8rem, 2.15vw, 2.75rem);
   font-weight: 300;
   line-height: 1.12;
@@ -1764,7 +1761,7 @@ body {
 .proof-heading h2 {
   max-width: none;
   color: #192a53;
-  font-family: "Fira Sans", sans-serif;
+  font-family: var(--font-family);
   font-size: clamp(2.45rem, 3.7vw, 4.45rem);
   font-weight: 400;
   letter-spacing: -0.05em;
@@ -1783,7 +1780,7 @@ body {
 
 .proof-strip strong {
   color: #004789;
-  font-family: "Fira Sans", sans-serif;
+  font-family: var(--font-family);
   max-width: 100%;
   font-size: clamp(2.45rem, 3.7vw, 4.45rem);
   font-weight: 400;
@@ -2045,7 +2042,7 @@ body {
   max-width: 760px;
   color: white;
   text-shadow: 0 2px 24px rgba(0, 0, 0, 0.42);
-  font-family: "Fira Sans", sans-serif;
+  font-family: var(--font-family);
   font-size: clamp(2.55rem, 3.7vw, 4.25rem);
   font-weight: 300;
   letter-spacing: 0;
@@ -2120,9 +2117,9 @@ body {
 .project-panel h3,
 .owner-card h3 {
   margin-top: 0.8rem;
-  font-family: "Fira Sans", sans-serif;
+  font-family: var(--font-family);
   font-size: 1.5rem;
-  font-weight: 650;
+  font-weight: 600;
 }
 
 .project-panel p,
@@ -2229,7 +2226,7 @@ body {
 }
 
 .process-step strong {
-  font-family: "Fira Sans", sans-serif;
+  font-family: var(--font-family);
   font-size: clamp(1.85rem, 2.15vw, 2.55rem);
   font-weight: 300;
   line-height: 1.05;
@@ -2328,7 +2325,7 @@ body {
   display: inline-block;
   margin-bottom: 0.85rem;
   color: #00b7f1;
-  font-family: "Fira Sans", sans-serif;
+  font-family: var(--font-family);
   font-size: clamp(0.72rem, 0.78vw, 0.86rem);
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -2384,7 +2381,7 @@ body {
 .value-practice-heading h2,
 .endtoend-copy h3 {
   color: #192a53;
-  font-family: "Fira Sans", sans-serif;
+  font-family: var(--font-family);
   font-size: clamp(2.45rem, 3.7vw, 4.45rem);
   font-weight: 400;
   letter-spacing: -0.05em;
@@ -2414,7 +2411,7 @@ body {
   border: 1px solid rgba(21, 27, 31, 0.32);
   background: white;
   color: rgba(21, 27, 31, 0.68);
-  font-family: "Fira Sans", sans-serif;
+  font-family: var(--font-family);
   font-size: clamp(1rem, 1.45vw, 2rem);
   font-weight: 800;
   letter-spacing: 0.045em;
@@ -2573,7 +2570,7 @@ body {
 .cta-card-image h2 {
   max-width: 920px;
   margin-top: 1.25rem;
-  font-family: "Fira Sans", sans-serif;
+  font-family: var(--font-family);
   font-size: clamp(2.45rem, 3.7vw, 4.45rem);
   font-weight: 400;
   line-height: 0.98;
@@ -2591,9 +2588,6 @@ body {
   max-width: 560px;
   margin-top: 1.35rem;
   color: rgba(0, 0, 0, 0.58);
-  font-size: clamp(1rem, 1.15vw, 1.22rem) !important;
-  font-weight: 400 !important;
-  line-height: 1.5 !important;
 }
 
 .cta-card-light > a,
@@ -3430,5 +3424,77 @@ body {
   .reveal {
     opacity: 1;
     transform: none;
+  }
+}
+
+/* Shared typography follows component rules so equal roles stay consistent. */
+:is(.section-heading h2, .aker-section-head h2, .management-intro h2,
+  .proof-heading h2, .portfolio-intro h2, .value-practice-heading h2,
+  .endtoend-copy h3, .trust-copy h2, .cta-card-light h2, .cta-card-image h2) {
+  font-size: var(--text-section);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+}
+
+:is(.aker-work-row h3, .management-panel-copy h3, .endtoend-principles h4) {
+  font-size: var(--text-subheading);
+  font-weight: 300;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+:is(.hero-support, .aker-section-head p:not(.eyebrow),
+  .section-heading p:not(.eyebrow), .management-intro p,
+  .portfolio-intro p:not(.eyebrow), .proof-copy, .trust-copy > p,
+  .cta-card-light > .cta-support, .aker-work-row p, .management-panel-copy p,
+  .endtoend-principles p, .footer-brand-panel p) {
+  font-size: var(--text-body);
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+
+:is(.hero-actions a, .aker-row-button, .search-panel .btn-primary,
+  .property-view-link, .management-panel-copy .btn-primary,
+  .portfolio-intro-button, .portfolio-link, .trust-customers-button,
+  .cta-card-light > a, .cta-card-image a,
+  .hero-nav .nav-menu.is-open .nav-menu-cta, .hero-menu-pill > a) {
+  font-family: var(--font-family);
+  font-size: var(--text-button);
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+:is(.search-panel select, .intent-tabs button) {
+  font-size: var(--text-small);
+  line-height: 1.5;
+}
+
+.property-card h3 {
+  font-size: 1.125rem;
+  line-height: 1.3;
+}
+
+:is(.property-card .property-location, .property-card .property-contact) {
+  font-size: var(--text-small);
+  line-height: 1.5;
+}
+
+.property-features span {
+  font-size: var(--text-small);
+}
+
+.property-features small {
+  font-size: var(--text-label);
+  letter-spacing: 0.06em;
+}
+
+@media (max-width: 767px) {
+  :root {
+    --text-section: clamp(2.25rem, 9.4vw, 3.55rem);
+    --text-subheading: clamp(1.5rem, 6vw, 2rem);
   }
 }
