@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADURE | Beyond Property. Creating Value.</title>
+    <meta
+      name="description"
+      content="ADURE is a premium UAE real estate company providing end-to-end property solutions across buying, selling, renting and property management."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              adure: {
+                green: "#004789",
+                deep: "#05263c",
+                gold: "#00b7f1",
+                sand: "#f3f8fb",
+                mist: "#e7f3f9",
+                ink: "#102a3b"
+              }
+            },
+            fontFamily: {
+              display: ["Fira Sans", "sans-serif"],
+              body: ["Fira Sans", "sans-serif"]
+            }
+          }
+        }
+      };
+    </script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="bg-adure-sand text-adure-ink font-body">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <nav class="hero-nav" aria-label="Primary navigation">
+        <div class="hero-menu-pill">
+          <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" data-nav-toggle>
+            <span></span><span></span><span></span>
+          </button>
+          <a href="#contact">Enquire</a>
+        </div>
+        <a href="#home" class="brand-mark" aria-label="ADURE home">
+          <img src="./assets/adure-logo-qlarity-white.png" alt="ADURE Abu Dhabi United Real Estate" />
+        </a>
+        <div class="hero-language-switch" aria-label="Language switcher">
+          <button type="button" class="active">EN</button>
+          <button type="button">AR</button>
+        </div>
+        <div id="primary-menu" class="nav-menu" data-nav-menu>
+          <a href="#solutions">About ADURE</a>
+          <a href="#about">Services</a>
+          <a href="#properties">Properties</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#customers">Our Customers</a>
+          <a href="#contact">Contact</a>
+          <a href="#contact" class="nav-social nav-menu-cta">List Your Property</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="home" class="hero-section">
+        <img
+          src="./assets/hero-premium-living-banner.png"
+          alt="Premium residential tower with city views"
+          class="hero-image"
+        />
+        <div class="hero-overlay"></div>
+        <div class="hero-composition">
+          <div class="hero-title-wrap reveal">
+            <p class="eyebrow hero-eyebrow">Abu Dhabi United Real Estate</p>
+            <h1 class="hero-title">
+              <span>Creating Value</span>
+              <span>Beyond Property</span>
+            </h1>
+            <p class="hero-support">We're your end-to-end partner in real estate, bringing buying, selling, leasing, and property management together around one purpose.</p>
+          </div>
+          <div class="hero-actions reveal" aria-label="Homepage hero actions">
+            <a href="#contact">List Your Property</a>
+            <a href="#properties">Find a Property</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="solutions" class="section bg-adure-sand">
+        <div class="endtoend-editorial mx-auto max-w-7xl px-5 lg:px-8">
+          <div class="endtoend-title reveal">
+            <div class="endtoend-image endtoend-image-left">
+              <img src="./assets/our-philosophy-tower.png" alt="Premium residential tower against a clear sky" />
+            </div>
+          </div>
+          <div class="endtoend-copy reveal">
+            <h3>A Longer View For us, the transaction is <span>one moment</span>. What follows matters just as much.</h3>
+            <div class="endtoend-principles" aria-label="ADURE philosophy principles">
+              <article>
+                <h4>Market clarity</h4>
+                <p>Bringing your property to market with clarity.</p>
+              </article>
+              <article>
+                <h4>Everyday performance</h4>
+                <p>Supporting everyday asset performance.</p>
+              </article>
+              <article>
+                <h4>Long-term protection</h4>
+                <p>Protecting every asset interest.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section bg-white what-we-do" id="about">
+        <div class="aker-wrap">
+          <div class="aker-section-head reveal">
+            <h2>With You Across Every <span class="title-accent">Stage</span></h2>
+            <p>Whether you're buying, selling, renting or placing an asset under management, we bring the right expertise together so every stage feels connected and considered.</p>
+          </div>
+          <div class="aker-work-list">
+            <article class="aker-work-row reveal">
+              <div>
+                <h3>Buy a Property</h3>
+                <p>Access residential and commercial opportunities through a team that understands location, asset quality and long-term value.</p>
+              </div>
+              <a href="#properties" class="aker-row-button">Buy With ADURE</a>
+              <img src="./assets/buy-property-waterfront.png" alt="Waterfront residential development at dusk" />
+            </article>
+            <article class="aker-work-row reveal">
+              <div>
+                <h3>Sell a Property</h3>
+                <p>Position assets professionally with clear marketing, qualified buyer engagement and coordinated transaction support.</p>
+              </div>
+              <a href="#contact" class="aker-row-button">Sell With ADURE</a>
+              <img src="./assets/sell-property-building.png" alt="Premium residential balconies with ocean view" />
+            </article>
+            <article class="aker-work-row reveal">
+              <div>
+                <h3>Rent a Property</h3>
+                <p>Find homes, offices and retail spaces supported by practical guidance from search through move-in.</p>
+              </div>
+              <a href="#properties" class="aker-row-button">Rent With ADURE</a>
+              <img src="./assets/rent-property-interior.png" alt="Luxury residential lounge interior" />
+            </article>
+            <article class="aker-work-row reveal">
+              <div>
+                <h3>Property Management</h3>
+                <p>Protect asset performance through leasing, facility coordination, tenant care, financial follow-up and owner reporting.</p>
+              </div>
+              <a href="#management" class="aker-row-button">Property Management</a>
+              <img src="./assets/property-management-pool.png" alt="Managed residential wellness pool and landscaped interior" />
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section bg-white proof-section">
+        <div class="proof-wrap">
+          <div class="proof-strip reveal">
+            <div class="proof-heading">
+              <h2>A Record That <span class="title-accent">Speaks</span> For Itself</h2>
+              <div class="proof-copy">Experience, scale and operational performance across a connected UAE portfolio.</div>
+            </div>
+            <article class="proof-stat proof-stat-feature"><strong>3,000+</strong><span>Units managed</span></article>
+            <article class="proof-stat"><strong>2002</strong><span>Established</span></article>
+            <article class="proof-stat"><strong>200+</strong><span>Professionals</span></article>
+            <article class="proof-stat"><strong>98%</strong><span>Occupancy rate</span></article>
+            <article class="proof-stat"><strong>1–2</strong><span>Weeks average vacancy</span></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="properties" class="section bg-adure-sand">
+        <div class="mx-auto max-w-7xl px-5 lg:px-8">
+          <div class="section-heading reveal">
+            <h2>Find Your Next <span class="title-accent">Property</span></h2>
+            <p>Explore available properties and start a buying or renting enquiry with us.</p>
+          </div>
+
+          <form class="search-panel reveal" aria-label="Detailed property search">
+            <div class="intent-tabs" role="tablist" aria-label="Property intent">
+              <button type="button" class="active" data-intent="buy">Buy</button>
+              <button type="button" data-intent="rent">Rent</button>
+            </div>
+            <label>
+              Location
+              <select>
+                <option>All locations</option>
+                <option>Abu Dhabi</option>
+                <option>Dubai</option>
+                <option>Al Ain</option>
+              </select>
+            </label>
+            <label>
+              Property Type
+              <select>
+                <option>All types</option>
+                <option>Apartment</option>
+                <option>Villa</option>
+                <option>Commercial</option>
+              </select>
+            </label>
+            <label>
+              Bedrooms
+              <select>
+                <option>Any bedrooms</option>
+                <option>Studio</option>
+                <option>1–2 bedrooms</option>
+                <option>3+</option>
+              </select>
+            </label>
+            <label>
+              Price Range
+              <select>
+                <option>Any price</option>
+                <option>Under AED 100K</option>
+                <option>AED 100K–200K</option>
+                <option>AED 200K+</option>
+              </select>
+            </label>
+            <button type="submit" class="btn-primary">Search Properties</button>
+          </form>
+
+          <div class="property-grid">
+            <article class="property-card reveal">
+              <img src="./assets/property-card-waterfront-aerial.png" alt="Waterfront residential tower viewed from above" />
+              <div class="property-type">Available</div>
+              <button class="property-share-button" type="button" aria-label="Share Two-bedroom waterfront apartment">♡</button>
+              <div class="property-card-copy">
+                <h3>Two-bedroom waterfront apartment</h3>
+                <p class="property-location">Hidd Al Saadiyat</p>
+                <div class="property-features">
+                  <span data-icon="home"><small>Beds</small><b>2</b></span>
+                  <span data-icon="bath"><small>Baths</small><b>3</b></span>
+                  <span data-icon="area"><small>Area</small><b>1,420 sq ft</b></span>
+                </div>
+                <p class="property-price">AED 145,000 / year</p>
+                <p class="property-contact">Assigned contact · Hidd Al Saadiyat team</p>
+                <div class="property-actions">
+                  <a href="#contact" class="property-view-link">View Property</a>
+                </div>
+              </div>
+            </article>
+            <article class="property-card reveal">
+              <img src="./assets/property-card-one-bedroom.png" alt="Modern one-bedroom residence living room with sea view" />
+              <div class="property-type">Available</div>
+              <button class="property-share-button" type="button" aria-label="Share Modern one-bedroom residence">♡</button>
+              <div class="property-card-copy">
+                <h3>Modern one-bedroom residence</h3>
+                <p class="property-location">Al Khalidiyah · Abu Dhabi</p>
+                <div class="property-features">
+                  <span data-icon="home"><small>Beds</small><b>1</b></span>
+                  <span data-icon="bath"><small>Baths</small><b>2</b></span>
+                  <span data-icon="area"><small>Area</small><b>860 sq ft</b></span>
+                </div>
+                <p class="property-price">AED 82,000 / year</p>
+                <p class="property-contact">Assigned contact · Abu Dhabi team</p>
+                <div class="property-actions">
+                  <a href="#contact" class="property-view-link">View Property</a>
+                </div>
+              </div>
+            </article>
+            <article class="property-card reveal">
+              <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1000&q=80" alt="Corporate office interior" />
+              <div class="property-type">Available</div>
+              <button class="property-share-button" type="button" aria-label="Share Commercial office with city access">♡</button>
+              <div class="property-card-copy">
+                <h3>Commercial office with city access</h3>
+                <p class="property-location">Airport Street · Abu Dhabi</p>
+                <div class="property-features">
+                  <span data-icon="building"><small>Type</small><b>Office</b></span>
+                  <span data-icon="area"><small>Area</small><b>2,100 sq ft</b></span>
+                  <span data-icon="check"><small>Status</small><b>Available</b></span>
+                </div>
+                <p class="property-price">AED 190,000 / year</p>
+                <p class="property-contact">Assigned contact · Abu Dhabi team</p>
+                <div class="property-actions">
+                  <a href="#contact" class="property-view-link">View Property</a>
+                </div>
+              </div>
+            </article>
+            <article class="property-card reveal">
+              <img src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1000&q=80" alt="Premium residential villa exterior" />
+              <div class="property-type">Available</div>
+              <button class="property-share-button" type="button" aria-label="Share Managed villa with garden outlook">♡</button>
+              <div class="property-card-copy">
+                <h3>Managed villa with garden outlook</h3>
+                <p class="property-location">Al Raha Gardens · Abu Dhabi</p>
+                <div class="property-features">
+                  <span data-icon="home"><small>Beds</small><b>4</b></span>
+                  <span data-icon="bath"><small>Baths</small><b>5</b></span>
+                  <span data-icon="area"><small>Area</small><b>3,200 sq ft</b></span>
+                </div>
+                <p class="property-price">AED 230,000 / year</p>
+                <p class="property-contact">Assigned contact · Abu Dhabi team</p>
+                <div class="property-actions">
+                  <a href="#contact" class="property-view-link">View Property</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="management" class="management-depth">
+        <div class="management-intro reveal">
+          <h2>Your <span class="title-accent">Asset</span>,<br />Looked After As A Whole</h2>
+          <p>Long-term performance depends on more than one service. We bring leasing, operations, facilities, financial management and legal coordination together under one connected approach.</p>
+        </div>
+        <div class="management-scroll" data-management-scroll>
+          <div class="management-stage">
+            <article class="management-panel is-active" data-management-panel>
+              <img class="management-panel-large" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1300&q=88" alt="Premium managed workspace reception detail" />
+              <div class="management-panel-copy">
+                <h3>Leasing &amp; Operations</h3>
+                <p>From market assessment and tenant sourcing to administration, renewals and regulatory compliance.</p>
+              </div>
+              <img class="management-panel-small" src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=900&q=88" alt="Managed commercial office detail" />
+            </article>
+            <article class="management-panel" data-management-panel>
+              <img class="management-panel-large" src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1300&q=88" alt="Premium residential facility detail" />
+              <div class="management-panel-copy">
+                <h3>Facility Management</h3>
+                <p>Technical, operational and support services that keep properties safe, efficient and reliable.</p>
+              </div>
+              <img class="management-panel-small" src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=900&q=88" alt="Managed residential exterior detail" />
+            </article>
+            <article class="management-panel" data-management-panel>
+              <img class="management-panel-large" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1300&q=88" alt="Real estate financial and legal planning detail" />
+              <div class="management-panel-copy">
+                <h3>Financial &amp; Legal Management</h3>
+                <p>Structured financial oversight, reporting and legal coordination that give owners greater visibility and control.</p>
+                <a href="#contact" class="btn-primary">Explore Property Management</a>
+              </div>
+              <img class="management-panel-small" src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=900&q=88" alt="Managed UAE property exterior" />
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="section bg-adure-sand">
+        <div class="mx-auto max-w-7xl px-5 lg:px-8">
+          <div class="section-heading reveal portfolio-intro">
+            <h2>A Portfolio That Reflects Our <span class="title-accent">Range</span></h2>
+            <div class="portfolio-intro-copy">
+              <p>From residential communities and commercial buildings to office towers, retail, hotels, government buildings, and mixed-use developments, we bring the same focus on performance and long-term value across the portfolio.</p>
+              <a href="#portfolio" class="portfolio-intro-button">Explore Our Portfolio</a>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-stage" data-portfolio-stage aria-label="Managed portfolio projects">
+          <div class="portfolio-row" data-portfolio-track>
+            <article class="portfolio-card is-active">
+              <img class="portfolio-bg" src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=2200&q=90" alt="" aria-hidden="true" />
+              <img class="portfolio-foreground" src="./assets/portfolio-waterfront-balcony.png" alt="Waterfront residential balconies overlooking the beach" />
+              <div>
+                <h3>Marina View<br />Residences</h3>
+                <a href="#contact" class="portfolio-link">View Project</a>
+                <p><span>Residential</span><span>Abu Dhabi</span><span>Managed</span></p>
+              </div>
+            </article>
+            <article class="portfolio-card">
+              <img class="portfolio-bg" src="./assets/portfolio-al-ain-garden.png" alt="" aria-hidden="true" />
+              <img class="portfolio-foreground" src="./assets/portfolio-al-ain-garden.png" alt="Garden community pool and wellness interior" />
+              <div>
+                <h3>Al Ain Garden<br />Community</h3>
+                <a href="#contact" class="portfolio-link">View Project</a>
+                <p><span>Mixed use</span><span>Al Ain</span><span>Managed</span></p>
+              </div>
+            </article>
+            <article class="portfolio-card">
+              <img class="portfolio-bg" src="./assets/portfolio-waterfront-ocean.png" alt="" aria-hidden="true" />
+              <img class="portfolio-foreground" src="./assets/portfolio-waterfront-ocean.png" alt="Waterfront residence with ocean views and planted terraces" />
+              <div>
+                <h3>Waterfront<br />Portfolio</h3>
+                <a href="#contact" class="portfolio-link">View Project</a>
+                <p><span>Residential</span><span>Abu Dhabi</span><span>Managed</span></p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section bg-white value-practice-section">
+        <div class="value-practice-wrap reveal" data-process-showcase>
+          <div class="section-heading value-practice-heading">
+            <h2>A Considered <span class="title-accent">Start</span></h2>
+            <p>Our structured 30-day transition brings documentation, tenants, operations, and reporting into management step by step.</p>
+          </div>
+          <div class="process-showcase">
+            <div class="process-track" role="list">
+              <button class="process-step is-active" type="button" role="listitem" data-process-step data-process-index="0">
+                <strong>Review</strong>
+              </button>
+              <button class="process-step" type="button" role="listitem" data-process-step data-process-index="1">
+                <strong>Inspect</strong>
+              </button>
+              <button class="process-step" type="button" role="listitem" data-process-step data-process-index="2">
+                <strong>Takeover</strong>
+              </button>
+              <button class="process-step" type="button" role="listitem" data-process-step data-process-index="3">
+                <strong>Manage</strong>
+              </button>
+            </div>
+            <div class="process-panel" aria-live="polite">
+              <article class="process-card is-active" data-process-card>
+                <img src="./assets/property-card-waterfront-aerial.png" alt="Abu Dhabi waterfront property management review" />
+                <div><span>Week 1</span><p>Property and document review, with a full handover audit.</p></div>
+              </article>
+              <article class="process-card" data-process-card>
+                <img src="./assets/sell-property-building.png" alt="Abu Dhabi residential property inspection" />
+                <div><span>Week 2</span><p>Asset inspection and tenant communication.</p></div>
+              </article>
+              <article class="process-card" data-process-card>
+                <img src="./assets/rent-property-interior.png" alt="Managed residential interior takeover" />
+                <div><span>Week 3</span><p>Operational takeover and reporting setup.</p></div>
+              </article>
+              <article class="process-card" data-process-card>
+                <img src="./assets/property-management-pool.png" alt="Abu Dhabi managed property performance" />
+                <div><span>Week 4+</span><p>Full management, reporting and performance monitoring.</p></div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section trust-section" id="customers">
+        <div class="trust-layout mx-auto max-w-7xl px-5 lg:px-8">
+          <div class="trust-copy reveal">
+            <div class="section-heading">
+              <h2>Trusted Across <span class="title-accent">Sectors</span></h2>
+              <p>We've worked with government, semi-government and private-sector organisations across the UAE.</p>
+            </div>
+            <div class="logo-wall sector-wall" aria-label="Client sectors">
+              <span>Government &amp; Semi-Government</span>
+              <span>Private Sector &amp; Corporates</span>
+            </div>
+            <a href="#customers" class="trust-customers-button">Our Customers</a>
+          </div>
+          <figure class="trust-image reveal">
+            <img src="./assets/trust-clients-sunset-tower.png" alt="Abu Dhabi waterfront towers and sunset skyline" />
+          </figure>
+        </div>
+      </section>
+
+      <section id="contact" class="closing-section">
+        <div class="cta-grid reveal">
+          <div class="cta-card cta-card-light">
+            <h2>We're Here For What Comes <span class="title-accent">Next</span></h2>
+            <p class="cta-support">Whether you're buying, selling, renting, or looking for a partner to manage your asset, start the conversation with ADURE.</p>
+            <a href="#properties">Find a Property</a>
+          </div>
+          <div class="cta-card cta-card-image">
+            <img src="./assets/start-conversation-skyline.png" alt="Waterfront skyline and premium residence terrace" />
+            <div>
+              <div class="cta-links">
+                <a href="#properties">Find a Property</a>
+                <a href="#contact">Sell With ADURE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-brand-panel">
+          <a href="#home" class="brand-mark">
+            <img src="./assets/adure-logo.png" alt="ADURE Abu Dhabi United Real Estate" />
+          </a>
+          <p>Beyond Property. Creating Value.</p>
+        </div>
+        <div class="footer-nav-panel">
+          <div class="footer-links">
+            <a href="#about">About ADURE</a>
+            <a href="#customers">Our Customers</a>
+            <a href="#contact">Media and Gallery</a>
+            <a href="#contact">Careers</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="footer-links">
+            <a href="#properties">Buy</a>
+            <a href="#properties">Rent</a>
+            <a href="#contact">List Your Property</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Sell</a>
+            <a href="#management">Property Management</a>
+          </div>
+        </div>
+        <div class="footer-contact-panel">
+          <p>Abu Dhabi United Real Estate<br />Abu Dhabi · Dubai · Al Ain</p>
+          <a href="tel:026457869">02 6457869</a>
+          <a href="tel:0566805125">0566805125</a>
+          <a href="mailto:Inquiries@adu-re.com">Inquiries@adu-re.com</a>
+        </div>
+      </div>
+      <div class="footer-meta">
+        <span>© 2026 ADURE. All rights reserved.</span>
+        <span>Privacy · Terms · Accessibility · Sitemap</span>
+        <span>Abu Dhabi United Real Estate</span>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
